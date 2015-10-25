@@ -1,0 +1,108 @@
+
+#####
+Speed
+capacity
+cost-saving
+Stability
+Accuracy
+Endurance
+How is the work done with respects to norms and standards?
+#####
+
+Main task workflows
+	Steps to get a functionality hoped
+	Examples:
+		Performance Logging in fluig's interface
+		Complete sign in test about how it's possible in a time range   
+		Performance when the consumer access the fluig identity
+	        Performance about management content with ECM product
+			
+By user types
+#Examples
+	Teste de consulta
+	Teste para geração de relatorios
+	Teste de cadastro de produto
+	
+#Performance testing theory:
+  	Operations exetuted #Example: Selecting a product to buy
+	Parameters	    #Example: delay 2 seconds to select		
+	Timers		    #Example: Max.resp.time 5 seconds	
+
+
+Response Time (High or low response)
+Latency (softwares or network)
+Render time (depends the client aplication that you use)
+Maximum concurrent VU (How many concurrent users the system be able to support) 
+Throughtput (it meant high performance)	
+
+##############################
+Types of Performance testing #
+##############################
+
+	Load test
+		Fixed number of concurrent VU
+		Fixed iterations of business transactions OR fixed duration
+		Also called performance test, reabilitty test and volume test
+
+	Stress Test
+		Extreme load until system failure
+		Increasing number of concurrent VU or test data or throughtput
+		Continous business transactions iterations
+		Used for benchmarking and finding bottlenecks
+		Also called Torture Test
+
+	Endurance Test (Soak Test)
+		Expected load for long duration
+		Fixed number of concurrent VU
+		Continuous test
+	
+
+Performance Testing Process
+
+	Test Script Modeling --> Teste Data Prep --> Test Modeling
+ 								 |	
+							      <--
+	|
+	 --> Test execution --> Report		
+
+##############################
+Test Environment Preparation #
+##############################
+
+	Isolated / test run during off-hours
+	Dedicated
+	Powerful enough load generators	
+	Must be a realistic production like environment
+
+################
+Test Reporting #
+################
+
+	Types - Status Report and Final Report
+	Contains sections
+		Executive summary
+		Performance test approach
+		Test scripts, test data and test environment
+		Test Results
+			- Benchmarks
+			- Suggested actions
+		Supporting Data
+
+##############
+Test usable ##
+##############
+To start:
+
+Clique com o botão direito no test plan, add, thread users, thread group
+Clique sobre o projeto, add, sampler, http request
+
+Configuration test:
+Number of threads (users) - Número de usuários que irão fazer as requisições
+Ramp-up period (in seconds) - Quantas requisições
+Loop Count: Quantas vezes será feita a requisição por usuário
+
+
+
+Graph Results
+- No of samples -> number of Jmeter's response
+- 
